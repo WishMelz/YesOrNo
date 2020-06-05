@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="选择, 随机选择, 随机决定, 随机yes or no, yes or no decision maker, yes no button, yes no oracle, yes or no, yes/no, random yes no, answers yes or no, online oracle">
+    <meta name="description" content="是或者不是，随机选择决定回答你的问题或者决定。随机做决定，一半一半的决定">
+    <link rel="shortcut icon" href="http://file.itsse.cn/favicon.ico" type="image/x-icon">
+    <title>Yes Or No</title>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 90%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+            z-index: 9;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .hint {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #ffffff61;
+            padding: 10px 10px;
+            background: #eeeeee40;
+            z-index: 11;
+        }
+
+        .loaging {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 10;
+            position: fixed;
+        }
+
+        .info {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+        }
+
+        .circle {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            /* background: #fff; */
+            position: relative;
+            background: linear-gradient(to right, #b1fae4, #e6fef6, #f5d6e3);
+            /* background: linear-gradient(to right ,#000,#fff,#000,#fff,#000,#fff,#000,#fff); */
+            animation: move 0.5s infinite;
+            box-shadow: 0 0 20px 7px #fff;
+        }
+
+        .in {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            20% {
+                transform: rotate(72deg);
+            }
+
+            40% {
+                transform: rotate(144deg);
+            }
+
+            60% {
+                transform: rotate(216deg);
+            }
+
+            80% {
+                transform: rotate(288deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img id="img" src="" alt="">
+    <div class="hint">
+        能轻而易举改变的决定,请慎重！不要在晚上做决定！
+    </div>
+    <div class="loaging">
+        <div class="info">
+            <div class="circle">
+                <div class="in"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/data.js"></script>
+<script src="./js/index.js"></script>
+<script>
+
+    
+</script>
+
+</html>
